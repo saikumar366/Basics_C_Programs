@@ -1,0 +1,9 @@
+#include <stdio.h>
+main()
+{
+ FILE *fp;
+fp = fopen("file.txt", "w");//opening file
+printf("%u",&fp);
+ fprintf(fp, "Hello file by fprintf...\n");//writing data into file
+fclose(fp);//closing file
+}
